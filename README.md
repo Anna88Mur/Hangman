@@ -16,3 +16,23 @@ Ein klassisches Galgenmännchen-Spiel für Deutschlerner und Wortliebhaber, entw
 📦 Installation
 
 1. Python 3.8+ installieren
+
+🕹️ Spielanleitung
+Kategorie auswählen
+
+Buchstaben oder ganze Wörter raten
+
+Wort vor 6 Fehlversuchen erraten
+
+Statistiken verfolgen
+
+Neue Runde starten mit einem Klick
+
+📊 Technische Details
+Datenbank: SQLite mit 100+ Wörtern
+
+Validierung: Deutsche Sonderzeichen
+
+Statistiken: Echtzeit-Tracking
+
+UI: Streamlit-basiert
