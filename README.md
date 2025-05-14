@@ -35,4 +35,5 @@ Validierung: Deutsche Sonderzeichen
 
 Statistiken: Echtzeit-Tracking
 
-UI: Streamlit-basiert
+UI: Streamlit-basiert 
+
