@@ -7,7 +7,7 @@ categories = get_categories()
 
 st.set_page_config(page_title=" Hangman auf Deutsch", page_icon="🎮")
 st.title("🎮 Deutsch-Hangman")
-st.write("### Lass uns das Wortspiel genießen!") 
+st.write("### Lass uns das Wortspiel genießen!")
 
 st.subheader("Wähle eine Kategorie aus!")
 
@@ -133,11 +133,16 @@ def process_guess():
         st.session_state.stats["total_games"] += 1
 
 
+game_over = st.session_state.word_guessed or st.session_state.wrong_attempts >= st.session_state.max_attempts
+
+
 with st.form("guess_form"):
     st.text_input("❓ Rate einen Buchstaben oder das ganze Wort:",
                   key="guess_input",
-                  max_chars=20)
-    st.form_submit_button("Absenden", on_click=process_guess)
+                  max_chars=20,
+                  disabled=game_over)
+    st.form_submit_button(
+        "Absenden", on_click=process_guess, disabled=game_over)
 
 
 def show_hangman(state):
@@ -175,7 +180,7 @@ if st.session_state.message:
     else:
         st.write(st.session_state.message)
 
-if st.session_state.word_guessed or st.session_state.wrong_attempts >= st.session_state.max_attempts:
+if game_over:
     if st.session_state.word_guessed:
         st.success(
             f"🎉 Gewonnen! Das Wort war **{st.session_state.secret_word}**")
