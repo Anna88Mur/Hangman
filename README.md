@@ -1,5 +1,10 @@
 # Hangman
 Ein klassisches Galgenmännchen-Spiel für Deutschlerner und Wortliebhaber, entwickelt mit Python und Streamlit.
+🎯 Ziel des Spiels
+
+Das Ziel des Spiels Galgenmännchen ist es, ein verborgenes deutsches Wort zu erraten, bevor der Strichmännchen-Galgen vollständig gezeichnet ist.
+Die Spieler:innen können einzelne Buchstaben oder das gesamte Wort raten.
+Nach sechs falschen Versuchen ist das Spiel verloren – aber es kann jederzeit eine neue Runde gestartet werden!
 
 🚀 Funktionen
 
