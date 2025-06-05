@@ -1,7 +1,7 @@
 
 import streamlit as st
 from db_helper import init_db, get_random_word, get_categories
-
+faaffefaewf
 init_db()
 categories = get_categories()
 
